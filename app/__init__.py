@@ -4,8 +4,9 @@ from .db import init_db
 from . import routes
 
 
-def create_app(test_config=None): 
+def create_app() -> Flask: 
     # Create and configure the app 
+
     app = Flask(__name__, 
                 instance_relative_config=True
                 )
